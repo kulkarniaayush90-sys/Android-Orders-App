@@ -2044,12 +2044,15 @@
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="feature_under_development">Feature under development</string>
     <string name="filter">Filter</string>
+    <string name="filter_coming_soon">Filter feature coming soon</string>
     <string name="help">Help</string>
+    <string name="help_feature_coming_soon">Help feature coming soon</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="home">Home</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="info_banner">यहाँ आपके सभी पिछले ऑर्डर दिखाए गए हैं। आप इनवॉइस डाउनलोड कर सकते हैं या उसी पते पर दोबारा ऑर्डर कर सकते हैं।</string>
     <string name="invoice">Invoice</string>
+    <string name="invoice_generated_successfully">Invoice generated successfully</string>
     <string name="item_view_role_description">Tab</string>
     <string name="m3_exceed_max_badge_text_suffix" translatable="false"><ns2:g example="Some te" id="part of a long text">%1$s</ns2:g><ns2:g example="…" id="suffix">%2$s</ns2:g></string>
     <string name="m3_ref_typeface_brand_medium" translatable="false">sans-serif-medium</string>
@@ -2090,6 +2093,7 @@
     <string description="Title for the dialog with a time picker. [CHAR_LIMIT=32]" name="material_timepicker_select_time">Select time</string>
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
     <string name="more">More</string>
+    <string name="more_options_coming_soon">More options coming soon</string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>
     <string name="mtrl_checkbox_button_icon_path_checked" translatable="false">M14,18.2 11.4,15.6 10,17 14,21 22,13 20.6,11.6z</string>
     <string name="mtrl_checkbox_button_icon_path_group_name" translatable="false">icon</string>
@@ -2170,6 +2174,8 @@
     <string name="payments">Payments</string>
     <string name="payments_coming_soon">Payments screen coming soon</string>
     <string name="pickup_location">Pickup location</string>
+    <string name="rebooking_coming_soon">Rebooking feature coming soon</string>
+    <string name="search_coming_soon">Search feature coming soon</string>
     <string name="search_hint">Search by Order ID / Location</string>
     <string name="search_menu_title">Search</string>
     <string name="searchbar_scrolling_view_behavior" translatable="false">
@@ -2180,6 +2186,7 @@
     <string description="Title of the side sheet&apos;s accessibility pane that is spoken by TalkBack when the side sheet appears on screen. [CHAR_LIMIT=NONE]" name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
     <string name="sort">Sort</string>
+    <string name="sort_coming_soon">Sort feature coming soon</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

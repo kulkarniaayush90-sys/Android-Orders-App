@@ -26,4 +26,11 @@
     <string name="payments_coming_soon">Payments screen coming soon</string>
     <string name="account_coming_soon">Account screen coming soon</string>
     <string name="feature_under_development">Feature under development</string>
+    <string name="search_coming_soon">Search feature coming soon</string>
+    <string name="filter_coming_soon">Filter feature coming soon</string>
+    <string name="sort_coming_soon">Sort feature coming soon</string>
+    <string name="invoice_generated_successfully">Invoice generated successfully</string>
+    <string name="rebooking_coming_soon">Rebooking feature coming soon</string>
+    <string name="help_feature_coming_soon">Help feature coming soon</string>
+    <string name="more_options_coming_soon">More options coming soon</string>
 </resources>

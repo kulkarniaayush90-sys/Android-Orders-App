@@ -123,11 +123,15 @@ string completed
 string drop_location
 string feature_under_development
 string filter
+string filter_coming_soon
 string help
+string help_feature_coming_soon
 string home
 string info_banner
 string invoice
+string invoice_generated_successfully
 string more
+string more_options_coming_soon
 string my_orders
 string order_vehicle
 string orders
@@ -135,8 +139,11 @@ string orders_subtitle
 string payments
 string payments_coming_soon
 string pickup_location
+string rebooking_coming_soon
+string search_coming_soon
 string search_hint
 string sort
+string sort_coming_soon
 style Theme.OceanOrders
 style Widget.OceanOrders.ActionButton
 style Widget.OceanOrders.BookAgainButton

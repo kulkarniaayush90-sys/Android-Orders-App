@@ -3962,12 +3962,15 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string feature_under_development
 string filter
+string filter_coming_soon
 string help
+string help_feature_coming_soon
 string hide_bottom_view_on_scroll_behavior
 string home
 string icon_content_description
 string info_banner
 string invoice
+string invoice_generated_successfully
 string item_view_role_description
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
@@ -4008,6 +4011,7 @@ string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string more
+string more_options_coming_soon
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name
@@ -4082,6 +4086,8 @@ string path_password_strike_through
 string payments
 string payments_coming_soon
 string pickup_location
+string rebooking_coming_soon
+string search_coming_soon
 string search_hint
 string search_menu_title
 string searchbar_scrolling_view_behavior
@@ -4090,6 +4096,7 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string sort
+string sort_coming_soon
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

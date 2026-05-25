@@ -47,10 +47,15 @@ class OrderAdapter(
             binding.txtStatus.setBackgroundResource(statusBackground)
             binding.txtStatus.setTextColor(ContextCompat.getColor(binding.root.context, statusColor))
 
-            binding.btnInvoice.setOnClickListener { onInvoiceClick(item) }
-            binding.btnBookAgain.setOnClickListener { onBookAgainClick(item) }
-            binding.btnMore.setOnClickListener { onMoreClick(item) }
-            binding.root.setOnClickListener { onMoreClick(item) }
+            binding.btnInvoice.isEnabled = true
+            binding.btnBookAgain.isEnabled = true
+            binding.btnMore.isEnabled = true
+            binding.root.isEnabled = true
+
+            binding.btnInvoice.setDebouncedClickListener { onInvoiceClick(item) }
+            binding.btnBookAgain.setDebouncedClickListener { onBookAgainClick(item) }
+            binding.btnMore.setDebouncedClickListener { onMoreClick(item) }
+            binding.root.setDebouncedClickListener { onMoreClick(item) }
         }
     }
 

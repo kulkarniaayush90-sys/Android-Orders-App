@@ -1,7 +1,6 @@
 package com.oceanx.myorders
 
 import android.os.Bundle
-import android.widget.Toast
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -9,16 +8,19 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.oceanx.myorders.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private var currentScreenTag = TAG_ORDERS
+    private var currentSnackbar: Snackbar? = null
+    private val lastNavTapAt = mutableMapOf<Int, Long>()
     private val orderAdapter = OrderAdapter(
-        onInvoiceClick = { showToast("Invoice requested for ${it.orderId}") },
-        onBookAgainClick = { showToast("Booked again: ${it.orderId}") },
-        onMoreClick = { showToast("More options for ${it.orderId}") }
+        onInvoiceClick = { showFeedback(getString(R.string.invoice_generated_successfully)) },
+        onBookAgainClick = { showFeedback(getString(R.string.rebooking_coming_soon)) },
+        onMoreClick = { showFeedback(getString(R.string.more_options_coming_soon)) }
     )
 
     private val allOrders = OrderRepository.sampleOrders()
@@ -68,6 +70,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupBottomNav() {
         binding.bottomNavigation.setOnItemSelectedListener { item ->
+            if (!isNavTapAllowed(item.itemId)) return@setOnItemSelectedListener false
             when (item.itemId) {
                 R.id.navHome,
                 R.id.navOrders -> {
@@ -101,6 +104,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.bottomNavigation.setOnItemReselectedListener { item ->
+            if (!isNavTapAllowed(item.itemId)) return@setOnItemReselectedListener
             when (item.itemId) {
                 R.id.navHome,
                 R.id.navOrders -> showOrdersScreen()
@@ -127,10 +131,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupHeaderActions() {
-        binding.btnSearch.setOnClickListener { showToast("Search tapped") }
-        binding.btnFilter.setOnClickListener { showToast("Filter tapped") }
-        binding.btnSort.setOnClickListener { showToast("Sort tapped") }
-        binding.btnHelp.setOnClickListener { showToast("Help tapped") }
+        binding.btnSearch.setDebouncedClickListener { showFeedback(getString(R.string.search_coming_soon)) }
+        binding.btnFilter.setDebouncedClickListener { showFeedback(getString(R.string.filter_coming_soon)) }
+        binding.btnSort.setDebouncedClickListener { showFeedback(getString(R.string.sort_coming_soon)) }
+        binding.btnHelp.setDebouncedClickListener { showFeedback(getString(R.string.help_feature_coming_soon)) }
         binding.bannerClose.setOnClickListener { binding.infoBanner.isVisible = false }
     }
 
@@ -159,8 +163,11 @@ class MainActivity : AppCompatActivity() {
         tab.setTextColor(ContextCompat.getColor(this, if (selected) R.color.text_primary else R.color.text_secondary))
     }
 
-    private fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    private fun showFeedback(message: String) {
+        currentSnackbar?.dismiss()
+        currentSnackbar = Snackbar.make(binding.root, message, Snackbar.LENGTH_SHORT)
+            .setAnchorView(binding.bottomNavigation)
+            .apply { show() }
     }
 
     private fun showOrdersScreen() {
@@ -189,5 +196,13 @@ class MainActivity : AppCompatActivity() {
         const val TAG_ORDERS = "orders_screen"
         const val TAG_PAYMENTS = "payments_placeholder"
         const val TAG_ACCOUNT = "account_placeholder"
+    }
+
+    private fun isNavTapAllowed(itemId: Int): Boolean {
+        val now = android.os.SystemClock.elapsedRealtime()
+        val lastTap = lastNavTapAt[itemId] ?: 0L
+        if (!isDebouncedTapAllowed(lastTap)) return false
+        lastNavTapAt[itemId] = now
+        return true
     }
 }
