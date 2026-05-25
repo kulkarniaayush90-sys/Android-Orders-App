@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_subtitle_end_margin">16dp</dimen>
+    <dimen name="header_illustration_width">120dp</dimen>
+    <dimen name="header_illustration_height">90dp</dimen>
+    <dimen name="header_illustration_end_margin">10dp</dimen>
+</resources>

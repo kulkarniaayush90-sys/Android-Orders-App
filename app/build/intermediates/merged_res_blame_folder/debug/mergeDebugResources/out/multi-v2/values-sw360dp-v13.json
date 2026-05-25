@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.oceanx.myorders.app-mergeDebugResources-30:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Work\\Ocean\\app\\src\\main\\res\\values-sw360dp\\dimens.xml",
+                    "from": {
+                        "startLines": "-1,4,3,-1",
+                        "startColumns": "-1,4,4,-1",
+                        "startOffsets": "-1,171,113,-1",
+                        "endColumns": "-1,57,57,-1",
+                        "endOffsets": "-1,224,166,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,116,174,232",
+                        "endColumns": "60,57,57,57",
+                        "endOffsets": "111,169,227,285"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\kulka\\.gradle\\daemon\\9.0.0\\com.oceanx.myorders.app-mergeDebugResources-30:\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Work\\Ocean\\app\\src\\main\\res\\values-sw360dp\\dimens.xml",
+                    "from": {
+                        "startLines": "5,4,3,2",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "229,171,113,55",
+                        "endColumns": "60,57,57,57",
+                        "endOffsets": "285,224,166,108"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,116,174,232",
+                        "endColumns": "60,57,57,57",
+                        "endOffsets": "111,169,227,285"
+                    }
+                }
+            ]
+        }
+    ]
+}

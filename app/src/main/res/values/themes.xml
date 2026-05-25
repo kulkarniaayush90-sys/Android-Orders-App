@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.OceanOrders" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/yellow_primary</item>
+        <item name="android:navigationBarColor">@color/nav_surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/yellow_dark</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/yellow_dark</item>
+        <item name="colorTertiary">@color/yellow_dark</item>
+        <item name="colorSurface">@color/surface_bg</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOutline">@color/border_light</item>
+    </style>
+
+    <style name="Widget.OceanOrders.SearchButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:background">@drawable/bg_search_field</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="strokeColor">@color/border_light</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/nav_ripple</item>
+    </style>
+
+    <style name="Widget.OceanOrders.ActionButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:background">@drawable/bg_action_button</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="cornerRadius">18dp</item>
+        <item name="strokeColor">@color/border_light</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/nav_ripple</item>
+    </style>
+
+    <style name="Widget.OceanOrders.Tab" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:background">@drawable/bg_tab_unselected</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Widget.OceanOrders.HelpButton" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:background">@drawable/bg_help_button</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="cornerRadius">37dp</item>
+        <item name="iconSize">26dp</item>
+        <item name="rippleColor">@color/nav_ripple</item>
+    </style>
+
+    <style name="Widget.OceanOrders.InvoiceButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:background">@drawable/bg_outline_button</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="strokeColor">@color/border_light</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/nav_ripple</item>
+    </style>
+
+    <style name="Widget.OceanOrders.BookAgainButton" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/bg_book_again_button</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="rippleColor">@color/nav_ripple</item>
+    </style>
+
+</resources>

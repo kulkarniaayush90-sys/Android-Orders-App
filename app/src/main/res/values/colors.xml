@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow_primary">#FFD31A</color>
+    <color name="yellow_dark">#F8C400</color>
+    <color name="surface_bg">#FFFFFF</color>
+    <color name="screen_bg">#FFF7D0</color>
+    <color name="text_primary">#111111</color>
+    <color name="text_secondary">#5E5E5E</color>
+    <color name="border_light">#ECECEC</color>
+    <color name="truck_bg">#FFF6C4</color>
+    <color name="banner_bg">#EEE8FF</color>
+    <color name="info_bg">#E7DDFF</color>
+    <color name="status_cancelled_bg">#F8E3E2</color>
+    <color name="status_success_bg">#E3F6EA</color>
+    <color name="status_booked_bg">#E9F1FF</color>
+    <color name="status_cancelled_text">#C84D49</color>
+    <color name="status_success_text">#1E8C54</color>
+    <color name="status_booked_text">#2959C9</color>
+    <color name="location_pickup">#19A463</color>
+    <color name="location_dropoff">#D13A3A</color>
+    <color name="nav_surface">#FFFFFF</color>
+    <color name="nav_selected">#A97A00</color>
+    <color name="nav_unselected">#111111</color>
+    <color name="nav_ripple">#1A111111</color>
+    <color name="icon_tint">#111111</color>
+    <color name="icon_muted">#5E5E5E</color>
+    <color name="shadow_soft">#14000000</color>
+    <color name="purple_ink">#5840B3</color>
+</resources>

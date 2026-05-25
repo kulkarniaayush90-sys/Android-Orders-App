@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\kulka\\.gradle\\daemon\\9.0.0\\com.oceanx.myorders.app-mergeDebugResources-30:\\values-sw320dp-v13\\values-sw320dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Work\\Ocean\\app\\src\\main\\res\\values-sw320dp\\dimens.xml",
+                    "from": {
+                        "startLines": "5,4,3,2",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "228,170,112,55",
+                        "endColumns": "60,57,57,56",
+                        "endOffsets": "284,223,165,107"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,116,174,232",
+                        "endColumns": "60,57,57,56",
+                        "endOffsets": "111,169,227,284"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.oceanx.myorders.app-mergeDebugResources-30:/values-sw320dp-v13/values-sw320dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Work\\Ocean\\app\\src\\main\\res\\values-sw320dp\\dimens.xml",
+                    "from": {
+                        "startLines": "-1,4,3,-1",
+                        "startColumns": "-1,4,4,-1",
+                        "startOffsets": "-1,169,112,-1",
+                        "endColumns": "-1,57,56,-1",
+                        "endOffsets": "-1,222,164,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,116,174,231",
+                        "endColumns": "60,57,56,56",
+                        "endOffsets": "111,169,226,283"
+                    }
+                }
+            ]
+        }
+    ]
+}

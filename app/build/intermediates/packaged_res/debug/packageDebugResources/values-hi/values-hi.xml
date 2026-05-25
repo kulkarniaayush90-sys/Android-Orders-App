@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account">अकाउंट</string>
+    <string name="all_orders">सभी ऑर्डर्स</string>
+    <string name="app_name">Ocean Orders</string>
+    <string name="book_again">फिर से बुक करें</string>
+    <string name="booked_again">फिर से बुक</string>
+    <string name="cancelled">रद्द</string>
+    <string name="close">बंद करें</string>
+    <string name="completed">पूर्ण</string>
+    <string name="drop_location">ड्रॉप स्थान</string>
+    <string name="filter">फ़िल्टर</string>
+    <string name="help">सहायता</string>
+    <string name="home">होम</string>
+    <string name="info_banner">यहाँ आपके सभी पिछले ऑर्डर दिखाए गए हैं। आप इनवॉइस डाउनलोड कर सकते हैं या उसी पते पर दोबारा ऑर्डर कर सकते हैं।</string>
+    <string name="invoice">इनवॉइस</string>
+    <string name="more">और</string>
+    <string name="my_orders">मेरे ऑर्डर्स</string>
+    <string name="order_vehicle">ऑर्डर वाहन</string>
+    <string name="orders">ऑर्डर्स</string>
+    <string name="orders_subtitle">अपने पूरे किए गए ट्रिप्स यहां देखें। आप इनवॉइस डाउनलोड कर सकते हैं या उसी ऑर्डर को फिर से बुक कर सकते हैं।</string>
+    <string name="payments">भुगतान</string>
+    <string name="pickup_location">पिकअप स्थान</string>
+    <string name="search_hint">ऑर्डर ID / लोकेशन से खोजें</string>
+    <string name="sort">सॉर्ट</string>
+</resources>
